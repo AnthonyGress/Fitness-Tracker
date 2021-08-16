@@ -3,12 +3,20 @@ const Workout = require("../models/workout.js");
 
 router.use("/", views);
 
+router.get("/workouts", (req, res) => {
+  // send last workout data
+});
+
 router.post("/workouts", (req, res) => {
-  //code here
+  // add new workout data
 });
 
 router.put("/workouts/:id", (req, res) => {
-  //code here
+  //update workout with id here
+});
+
+router.get("/workouts/range", (req, res) => {
+  // send workout range data
 });
 
 module.exports = router;
