@@ -1,14 +1,8 @@
 const router = require("express").Router();
-const views = require("./view");
+const views = require("./view.js");
+const api = require("./api.js");
 
 router.use("/", views);
-
-router.get("/exercise", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/exercise.html"));
-});
-
-// router.get("/stats", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../public/stats.html"));
-// });
+router.use("/api", api);
 
 module.exports = router;
