@@ -12,6 +12,7 @@ body,
   height: 100%;
   background-color: #1c1e1f !important;
   color: white !important;
+  color: inherit;
 }
 
 body {
@@ -86,12 +87,13 @@ select:focus {
   border-color: #aaa;
   box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
-  color: #fff;
+  color: black !important;
   outline: none;
 }
 
 select option {
   font-weight: normal;
+  color: black !important;
   width: 100%;
 }
 
@@ -106,6 +108,7 @@ input {
   width: 100%;
   padding: 10px;
   background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  color: black !important;
 }
 
 .wrapper {
