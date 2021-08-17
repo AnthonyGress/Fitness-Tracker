@@ -11,7 +11,7 @@ body,
 .wrapper {
   height: 100%;
   background-color: #1c1e1f !important;
-  color: white;
+  color: white !important;
 }
 
 body {
@@ -86,7 +86,7 @@ select:focus {
   border-color: #aaa;
   box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
-  color: #222;
+  color: #fff;
   outline: none;
 }
 

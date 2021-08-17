@@ -51,7 +51,6 @@ router.put("/workouts/:id", ({ body, params }, res) => {
 
 router.get("/workouts/range", (req, res) => {
   // send workout range data
-  // TODO limit range to 7 days
   Workout.aggregate([
     {
       $addFields: {
@@ -64,7 +63,6 @@ router.get("/workouts/range", (req, res) => {
     .sort({ _id: -1 })
     .limit(7)
     .then((dbWorkouts) => {
-      console.log(dbWorkouts);
       res.json(dbWorkouts);
     })
     .catch((err) => {
