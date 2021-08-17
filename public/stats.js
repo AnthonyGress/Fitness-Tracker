@@ -34,7 +34,6 @@ function populateChart(data) {
   });
 
   let lineChart = new Chart(line, {
-    scaleFontColor: "#FFFFFF",
     type: "line",
     data: {
       labels,
@@ -50,18 +49,36 @@ function populateChart(data) {
     },
     options: {
       responsive: true,
-      title: {
+      legend: {
         display: true,
-        text: "Time Spent Working Out (Last 7 days)",
+        text: "this is the legend",
+        labels: {
+          fontColor: "rgb(255, 99, 132)",
+        },
+      },
+      plugins: {
+        title: {
+          display: true,
+          text: "Time Spent Working Out (Last 7 days)",
+          color: "white",
+          font: { size: 20 },
+        },
       },
       scales: {
         y: {
           beginAtZero: true,
+          ticks: {
+            color: "white",
+          },
+        },
+        x: {
+          ticks: {
+            color: "white",
+          },
         },
       },
     },
   });
-
   let barChart = new Chart(bar, {
     type: "bar",
     data: {
@@ -91,18 +108,29 @@ function populateChart(data) {
       ],
     },
     options: {
-      title: {
-        display: true,
-        text: "Pounds Lifted (Last 7 days)",
+      plugins: {
+        title: {
+          display: true,
+          text: "Pounds Lifted (Last 7 days)",
+          color: "white",
+          font: { size: 20 },
+        },
       },
       scales: {
-        yAxes: [
-          {
-            ticks: {
-              beginAtZero: true,
-            },
+        y: {
+          ticks: {
+            beginAtZero: true,
+            color: "white",
           },
-        ],
+        },
+        x: {
+          ticks: {
+            color: "white",
+          },
+        },
+      },
+      datasetlabels: {
+        color: "white",
       },
     },
   });
