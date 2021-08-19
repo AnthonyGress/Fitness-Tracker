@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-<a href="https://stargate-app.herokuapp.com/" target="_blank"><div align="center"><img width="1917" alt="fitness tracker screenshot" src="./public/fitness tracker screenshot.png">
+<a href="https://powerful-sea-65196.herokuapp.com/" target="_blank"><div align="center"><img width="1917" alt="fitness tracker screenshot" src="./public/fitness tracker screenshot.png">
 
 </div></a>
 
